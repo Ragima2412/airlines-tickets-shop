@@ -1,0 +1,28 @@
+.filterWrapper {
+    background-color: white;
+    padding: 20px 0px;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+    max-width: 25%;
+    height: 400px;
+}
+h4 {
+    font-weight:500;
+    margin: 20px 0px;
+}
+.buttons {
+    display: flex;
+}
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1650px) {
+.filterWrapper{
+    min-width: 70%;
+    padding: 50px;
+    margin: auto;
+ }
+}

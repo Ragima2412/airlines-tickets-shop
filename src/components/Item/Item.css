@@ -1,0 +1,95 @@
+.item-wrapper {
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.arrow-icon {
+  width: 15px;
+  height: auto;
+}
+.arrow-icon-line {
+    position: relative;    
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.arrow-icon-line:before{
+    content: "";
+    display: inline-block;
+    border-bottom: .1rem solid rgb(194, 194, 194);
+    width: 100%;
+}
+.price-info{
+ border-right: 2px solid rgb(194, 194, 194);
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ 
+}
+.price-btn {
+    color: white;
+    background-color: rgb(238, 120, 9);
+    border: none;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 4px;
+    padding:12px 5px;
+    font-size: 18px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.flight-info { 
+    width: 100%;
+    padding: 50px 30px;
+}
+.time-info > span:first-of-type,
+.time-info > span:last-of-type {
+    display: block;
+    font-size: 50px;
+    color: rgb(70, 69, 69);
+}
+time-info > span:last-of-type{
+    text-align: end;
+}
+.time-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.time-info > span {
+    flex: 1 1 1;
+}
+.stops-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    color:  rgb(104, 102, 102);
+    font-size: 12px;
+    text-align: center;
+}
+.departure-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 32px;
+    color: rgb(70, 69, 69);
+    font-weight: 600;
+}
+.destination-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px;
+    color: rgb(107, 106, 106);
+}
+@media (max-width: 1650px) {
+    .item-wrapper{margin-top: 20px;
+     }
+     .price-info {
+         border-right: none;
+         width: 20%;
+     }
+    }

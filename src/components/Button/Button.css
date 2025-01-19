@@ -1,0 +1,33 @@
+.button {
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    border: 1px solid rgb(196, 198, 199);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(37, 188, 235);
+    font-weight: 500;
+}
+.button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+}
+.button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+.button:first-child:hover,
+.active {
+    background-color: rgb(16, 147, 187);
+    color: white;
+
+}
+.button:hover {
+  background-color: rgb(162, 224, 243);
+  border-color: rgb(37, 188, 235);
+  cursor: pointer;
+}
